@@ -1,30 +1,28 @@
-# Delete all messages in a Discord channel or DM
+# Discord kanalındaki veya DM'deki tüm mesajları silme
 
-1. Select and Copy this script: [deleteDiscordMessages.js](https://raw.githubusercontent.com/victornpb/deleteDiscordMessages/master/deleteDiscordMessages.js)
+1. Buradaki bağlantıyı yeni sekmede açın ve kodu gösterdiğimiz yere yapıştırın : [deleteDiscordMessages.js](https://raw.githubusercontent.com/arvendf/DeleteDiscordMessages/master/deleteDiscordMessages.js)
 
-2. Open [Discord](https://discordapp.com/channels/@me) in a __browser__ (like Chrome, Safari or Firefox)  
-and go to a #Channel or a DM conversation
+2. Discord'u uygulama olarak değil internetten açınız (Örnek Chrome, Safari or Firefox)
+açtıktan sonra sileceğiniz DM konuşmasına tıklayıp dediklerimizi uygulayın
 
-3. Open DevTools pressing:
+3. Konsolu açmak için hangi tarayacıdan ne şekilde açacağınız :
     - Chrome (Windows, Linux, Chrome OS):
-    <kbd>F12</kbd> or <kbd>Control</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd> 
+    <kbd>F12</kbd> or <kbd>CTRL</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd> 
     - Chrome (Mac): 
     <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>J</kbd>
     - Safari (Mac): <kbd>Command</kbd>+<kbd>Option</kbd>+<kbd>C</kbd>
   
-4. Paste  (<kbd>Ctrl</kbd>+<kbd>V</kbd>) the script in the "Console" tab, then press <kbd>ENTER</kbd>, a popup window will open;
+4. Kopyalamak için  (<kbd>Ctrl</kbd>+<kbd>V</kbd>) Consol'a kopyaladıktan sonra, <kbd>ENTER</kbd> tuşuna basmanız gerekmektedir, ve sonra sayfa açılacaktır;
 
-5. Click on the blue buttons near **Authorization**, **Author** and **Channel**.  
-   *(Optional: getting [authToken](./help/authToken.md), [authorId](./help/authorId.md), [channelId](./help/channelId.md) and [messageId](./help/messageId.md)  manually)*
-
-6. Click the "<button>START</button>" button.
+5. Açıldıktan sonra ve mesajlarını sileceğiniz kişinin DM kutusundaysanız,log açıldıktan sonra mavi tuşlara basmanız gerekmektedir.
+3.seçenek olan hedef yerinde önce ki mesaj ve sonra ki mesaj olarak adlandırdığımız yerlerde ilk seçenekte mesajı ve üstünü siler aşşağıda ki seçenekte mesaj ve aşşağı kısmını siler eğer orta bir yer belirlemek istiyorsanız iki mesajında ID'sini alıp çaprazlama bir şekilde seçtiğiniz yere kadar silinir. ( Ve unutmayalım bunlardan önce Developer yani yazılımcı kodcu modunu açmanız gerekmektedir.)
 
 **TLDR:** Watch this [40s video instructions](https://imgur.com/a/vYmDNSZ)
 
-<img src="https://user-images.githubusercontent.com/3372598/64500336-28ea9b00-d293-11e9-8c24-eac6b98e04c0.png" height="600">
+<img src="https://arven.is-pretty.cool/5BiMRNw.png" height="600">
 
-I made this tool just for you ❤️ , it would be awesome if you could just click the ⭐️ Star button at the top! 
-   
+Bu yazılım sadece yardım amaçlı yapılmıştır ve sizler için yapılmıştır ❤️ ^^  , ⭐️ tuşuna basarak bize destek olabilirsiniz ve bu şekilde yazılımın daha fazla kullanıcıya ulaşmasını sağlarsınız.
+
 If you have issues or just need help [open an issue here](https://github.com/victornpb/deleteDiscordMessages/issues)
 
 
