@@ -1,12 +1,12 @@
-// Paste this code inside discordapp.com console
+// discord consola yapistir
 
 (function () {
     let stop;
     let popup;
     popup = window.open('', '', `top=0,left=${screen.width-800},width=800,height=${screen.height}`);
-    if (!popup) return console.error('Popup blocked! Please allow popups and try again.');
+    if (!popup) return console.error('Eklenti Engellendi, Tekrar deneyiniz!.');
     popup.document.write(/*html*/`<!DOCTYPE html>
-    <html><head><meta charset='utf-8'><title>Delete Discord Messages</title><base target="_blank">
+    <html><head><meta charset='utf-8'><title>#Arven# Mesaj Gecmisi Silme JS</title><base target="_blank">
     <style>body{background-color:#36393f;color:#dcddde;font-family:sans-serif;} a{color:#00b0f4;}
     body.redact .priv{display:none;} body:not(.redact) .mask{display:none;} body.redact [priv]{-webkit-text-security:disc;}
     .toolbar span{margin-right:8px;}
@@ -15,35 +15,35 @@
     </style></head><body>
     <div class="toolbar" style="position:fixed;top:0;left:0;right:0;padding:8px;background:#36393f;box-shadow: 0 1px 0 rgba(0,0,0,.2), 0 1.5px 0 rgba(0,0,0,.05), 0 2px 0 rgba(0,0,0,.05);">
         <div style="display:flex;flex-wrap:wrap;">
-            <span>Authorization <a href="https://github.com/victornpb/deleteDiscordMessages/blob/master/help/authToken.md" title="Help">?</a>
+            <span>Tokeniniz <a href="https://github.com/arvendf/deleteDiscordMessages/blob/master/help/authToken.md" title="Help">?</a>
                 <button id="getToken">Get</button><br>
                 <input type="password" id="authToken" placeholder="Auth Token" autofocus>*<br>
-                <span>Author <a href="https://github.com/victornpb/deleteDiscordMessages/blob/master/help/authorId.md" title="Help">?</a></span>
+                <span>ID <a href="https://github.com/arvendf/deleteDiscordMessages/blob/master/help/authorId.md" title="Help">?</a></span>
                 <button id="getAuthor">Me</button><br><input id="authorId" type="text" placeholder="Author ID" priv></span>
-            <span>Guild/Channel <a href="https://github.com/victornpb/deleteDiscordMessages/blob/master/help/channelId.md" title="Help">?</a>
+            <span>Sunucu/Kanal <a href="https://github.com/arvendf/deleteDiscordMessages/blob/master/help/channelId.md" title="Help">?</a>
                 <button id="getGuildAndChannel">Get</button><br>
                 <input id="guildId" type="text" placeholder="Guild ID" priv><br>
                 <input id="channelId" type="text" placeholder="Channel ID" priv></span><br>
-            <span>Range <a href="https://github.com/victornpb/deleteDiscordMessages/blob/master/help/messageId.md" title="Help">?</a><br>
-                <input id="afterMessageId" type="text" placeholder="After messageId" priv><br>
-                <input id="beforeMessageId" type="text" placeholder="Before messageId" priv>
+            <span>Hedef <a href="https://github.com/arvendf/deleteDiscordMessages/blob/master/help/messageId.md" title="Help">?</a><br>
+                <input id="afterMessageId" type="text" placeholder="Onceki Mesaj ID" priv><br>
+                <input id="beforeMessageId" type="text" placeholder="Sonraki Mesaj ID" priv>
             </span>
-            <span>Filter <a href="https://github.com/victornpb/deleteDiscordMessages/blob/master/help/filters.md" title="Help">?</a><br>
+            <span>Filter <a href="https://github.com/arvendf/deleteDiscordMessages/blob/master/help/filters.md" title="Help">?</a><br>
                 <input id="content" type="text" placeholder="Containing text" priv><br>
-                <label><input id="hasLink" type="checkbox">has: link</label><br>
-                <label><input id="hasFile" type="checkbox">has: file</label><br>
-                <label><input id="includeNsfw" type="checkbox">Include NSFW</label>
+                <label><input id="hasLink" type="checkbox">Sadece Linkler</label><br>
+                <label><input id="hasFile" type="checkbox">Sadece Dosyalar</label><br>
+                <label><input id="includeNsfw" type="checkbox">Sadece NSFW +18</label>
             </span>
         </div>
-        <button id="start" style="background:#43b581;width:80px;">Start</button>
-        <button id="stop" style="background:#f04747;width:80px;" disabled>Stop</button>
-        <button id="clear" style="width:80px;">Clear log</button>
-        <label><input id="redact" type="checkbox"><small>Hide sensitive information</small></label> <span></span>
+        <button id="start" style="background:#43b581;width:80px;">Baslat</button>
+        <button id="stop" style="background:#f04747;width:80px;" disabled>Durdur</button>
+        <button id="clear" style="width:80px;">Temizle</button>
+        <label><input id="redact" type="checkbox"><small>Yazismaları Gizle</small></label> <span></span>
         <label><input id="autoScroll" type="checkbox" checked><small>Auto scroll</small></label> <span></span>
     </div>
     <pre style="margin-top:150px;font-size:0.75rem;font-family:Consolas,Liberation Mono,Menlo,Courier,monospace;">
-        <center>Star this project on <a href="https://github.com/victornpb/deleteDiscordMessages" target="_blank">github.com/victornpb/deleteDiscordMessages</a>!\n\n
-            <a href="https://github.com/victornpb/deleteDiscordMessages/issues" target="_blank">Issues or help</a></center>
+        <center>Coded By <a href="https://discord.gg/k6pQHH" target="_blank">Arven & Revenge</a> !\n\n
+            <a href="https://discord.gg/k6pQHH" target="_blank">Bize ulaşmak için Tıklayınız.</a></center>
         </pre></body></html>`);
 
     const logArea = popup.document.querySelector('pre');
@@ -106,8 +106,8 @@
      * @param {boolean} includeNsfw Search in NSFW channels
      * @param {function(string, Array)} extLogger Function for logging
      * @param {function} stopHndl stopHndl used for stopping
-     * @author Victornpb <https://www.github.com/victornpb>
-     * @see https://github.com/victornpb/deleteDiscordMessages
+     * @author arvendf <https://www.github.com/arvendf>
+     * @see https://github.com/arvendf/deleteDiscordMessages
      */
     async function deleteMessages(authToken, authorId, guildId, channelId, afterMessageId, beforeMessageId, content,hasLink, hasFile, includeNsfw, extLogger, stopHndl) {
         const start = new Date();
@@ -129,7 +129,7 @@
         const redact = str => `<span class="priv">${escapeHTML(str)}</span><span class="mask">REDACTED</span>`;
         const queryString = params => params.filter(p => p[1] !== undefined).map(p => p[0] + '=' + encodeURIComponent(p[1])).join('&');
         const ask = async msg => new Promise(resolve => setTimeout(() => resolve(popup.confirm(msg)), 10));
-        const printDelayStats = () => log.verb(`Delete delay: ${deleteDelay}ms, Search delay: ${searchDelay}ms`, `Last Ping: ${lastPing}ms, Average Ping: ${avgPing|0}ms`);
+        const printDelayStats = () => log.verb(`Silme Gecikmesi: ${deleteDelay}ms, Arama Gecikmesi: ${searchDelay}ms`, `Son Ping: ${lastPing}ms, Ortalama Ping: ${avgPing|0}ms`);
 
         const log = {
             debug() { extLogger ? extLogger('debug', arguments) : console.debug.apply(console, arguments); },
@@ -219,27 +219,27 @@
             }
 
             const etr = msToHMS((searchDelay * Math.round(total / 25)) + ((deleteDelay + avgPing) * total));
-            log.info(`Total messages found: ${data.total_results}`, `(Messages in current page: ${data.messages.length}, Author: ${deletableMessages.length}, System: ${systemMessages.length})`, `offset: ${offset}`);
+            log.info(`Toplam Mesaj : ${data.total_results}`, `(Mesaj Sayfası: ${data.messages.length}, Author: ${deletableMessages.length}, System: ${systemMessages.length})`, `offset: ${offset}`);
             printDelayStats();
-            log.verb(`Estimated time remaining: ${etr}`)
+            log.verb(`Tahmini Zaman: ${etr}`)
             
             
             if (myMessages.length > 0) {
 
                 if (iterations < 1) {
-                    log.verb(`Waiting for your confirmation...`);
-                    if (!await ask(`Do you want to delete ~${total} messages?\nEstimated time: ${etr}\n\n---- Preview ----\n` +
+                    log.verb(`Onayınız Bekleniyor...`);
+                    if (!await ask(`Silmek istiyormusun ~${total} mesaj?\nEstimated time: ${etr}\n\n---- Bknz: ----\n` +
                         myMessages.map(m => `${m.author.username}#${m.author.discriminator}: ${m.attachments.length ? '[ATTACHMENTS]' : m.content}`).join('\n')))
-                            return end(log.error('Aborted by you!'));
+                            return end(log.error('İsteğiniz iptal edilmiştir.!'));
                     log.verb(`OK`);
                 }
                 
                 for (let i = 0; i < deletableMessages.length; i++) {
                     const message = deletableMessages[i];
-                    if (stopHndl && stopHndl()===false) return end(log.error('Stopped by you!'));
+                    if (stopHndl && stopHndl()===false) return end(log.error('İslem Durduruldu'));
 
                     log.debug(`${((delCount + 1) / grandTotal * 100).toFixed(2)}% (${delCount + 1}/${grandTotal})`,
-                        `Deleting ID:${redact(message.id)} <b>${redact(message.author.username+'#'+message.author.discriminator)} <small>(${redact(new Date(message.timestamp).toLocaleString())})</small>:</b> <i>${redact(message.content).replace(/\n/g,'↵')}</i>`,
+                        `Silinen ID:${redact(message.id)} <b>${redact(message.author.username+'#'+message.author.discriminator)} <small>(${redact(new Date(message.timestamp).toLocaleString())})</small>:</b> <i>${redact(message.content).replace(/\n/g,'↵')}</i>`,
                         message.attachments.length ? redact(JSON.stringify(message.attachments)) : '');
                     
                     let resp;
@@ -299,7 +299,7 @@
             }
         }
 
-        log.success(`\nStarted at ${start.toLocaleString()}`);
+        log.success(`\nBaşlama zamanı  ${start.toLocaleString()}`);
         log.debug(`authorId="${redact(authorId)}" guildId="${redact(guildId)}" channelId="${redact(channelId)}" afterMessageId="${redact(afterMessageId)}" beforeMessageId="${redact(beforeMessageId)}" hasLink=${!!hasLink} hasFile=${!!hasFile}`);
         return await recurse();
     }
