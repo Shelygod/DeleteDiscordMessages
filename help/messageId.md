@@ -1,19 +1,18 @@
-# messageId
-You can delete all messages after a specific message, before a specific message, or everything between two points. For that you need to provide a messageID:
-- Right click a message, and click [Copy ID](./developerMode.md)
-> If the `Copy ID` doesn't show up, you need to enable [Developer mode](./developerMode.md) first.
-
+# Mesaj ID
+Belirli bir mesajdan sonra, belirli bir mesajdan önce veya iki nokta arasındaki her şeyi silebilirsiniz. Bunun için bir mesaj ID'si sağlamanız gerekir:
+- Bir mesaja sağ tıklayın [Copy ID](./developerMode.md)
+> Copy ID görünmüyorsa, önce [Geliştirici Modu](./developerMode.md) etkinleştirmeniz gerekir.
 ----
 
-## Delete everything after a message
+## Mesajdan sonra her şeyi sil
 <img src="https://user-images.githubusercontent.com/3372598/64141154-6ce62780-cddd-11e9-8b73-5fa54b866e46.png" height="450">
 
-## Delete everything before a message
+## Mesajdan önce her şeyi silme
 <img src="https://user-images.githubusercontent.com/3372598/64141156-6ce62780-cddd-11e9-984f-db53060443fb.png" height="450">
 
-## Delete everything between two messages
+## İki mesaj arasındaki her şeyi sil
 <img src="https://user-images.githubusercontent.com/3372598/64141157-6d7ebe00-cddd-11e9-9184-f2bf41acf959.png" height="450">
 
-## Delete everything in a channel
+## Kanaldaki her şeyi silme
 
-Just leave both `after` and `before` empty
+Boş bırakınız
