@@ -1,18 +1,18 @@
 # authorId
 
-## The easy way
+## Kolay Kullanım
 
- - Just click **Me** button next to "Author" in the popup window, 
-   it should auto detect your ID.
+ - Açılır pencerede ID Bölümündeki **Me** Butonuna basmanız yeterlidir, 
+   kimliğinizi otomatik olarak algılar.
 
 
-## The manual way
-- Right click your **avatar** in a message you sent in the chat, [Copy ID](./developerMode.md)  
-  <img src="https://media.giphy.com/media/YnNTRqKRxVcjOuyFps/giphy.gif">  
-  NOT THE MESSAGE THE AVATAR.  
+## Manuel yol
+- Sohbette gönderdiğiniz bir mesajda **avatarınıza** sağ tıklayın, [Copy ID](./developerMode.md)  
+  <img src="https://arven.is-pretty.cool/7trD4sQ.gif">  
+  Mesajın ıd'sini değil avatarınıza tıklayarak alınan ıdyi kopyalayınız.  
   (You cannot delete the other's person messages a in DM channel, you will get Error 403)
 
 
 -----
 
-> If the `Copy ID` doesn't show up, you need to enable [Developer mode](./developerMode.md) first.
+> Copy ID görünmüyorsa, önce [Geliştirici Modu](./developerMode.md) etkinleştirmeniz gerekir.
