@@ -17,53 +17,50 @@ açtıktan sonra sileceğiniz DM konuşmasına tıklayıp dediklerimizi uygulay�
 5. Açıldıktan sonra ve mesajlarını sileceğiniz kişinin DM kutusundaysanız,log açıldıktan sonra mavi tuşlara basmanız gerekmektedir.
 3.seçenek olan hedef yerinde önce ki mesaj ve sonra ki mesaj olarak adlandırdığımız yerlerde ilk seçenekte mesajı ve üstünü siler aşşağıda ki seçenekte mesaj ve aşşağı kısmını siler eğer orta bir yer belirlemek istiyorsanız iki mesajında ID'sini alıp çaprazlama bir şekilde seçtiğiniz yere kadar silinir. ( Ve unutmayalım bunlardan önce Developer yani yazılımcı kodcu modunu açmanız gerekmektedir.)
 
-**TLDR:** Watch this [40s video instructions](https://imgur.com/a/vYmDNSZ)
-
 <img src="https://arven.is-pretty.cool/5BiMRNw.png" height="600">
 
 Bu yazılım sadece yardım amaçlı yapılmıştır ve sizler için yapılmıştır ❤️ ^^  , ⭐️ tuşuna basarak bize destek olabilirsiniz ve bu şekilde yazılımın daha fazla kullanıcıya ulaşmasını sağlarsınız.
 
-If you have issues or just need help [open an issue here](https://github.com/victornpb/deleteDiscordMessages/issues)
+Eğer yardım lazımsa [makaleyi aç](https://github.com/arvendf/DeleteDiscordMessages/issues)
 
 
 ----
 
-#### Features
+#### Yeni Özellikler
 
-- Fastest script out there, it auto adjusts the delay to be the fastest your internet and discords allows!
-- Easy interface with instructions
-- Respect discord API rate limits
-- Auto detect current [authToken](./help/authToken.md), [authorId](./help/authorId.md), [channelId](./help/channelId.md)
-- It can delete a specific [range of messages](./help/messageId.md)
-- It can delete only [links or attached files](./help/filters.md)
-- Comprehensive log of messages being deleted (with their content)
-- Hide private information for taking screenshots
-- Detects system messages and skips them like "You started a voice call"
-- You can use your computer and discord while it is running (unlike macro key scripts)
-- Start/stop whenever you want
-- Works with even thousands of messages
-
-----
-
-Originally from https://gist.github.com/victornpb/135f5b346dea4decfc8f63ad7d9cc182
+- Orada en hızlı komut dosyası, otomatik olarak internet ve discorda en hızlı olmak için gecikme ayarları!
+- Kolay arayüz
+- Discord API'si hız sınırlarına uyun
+- Otomatik Token [authToken](./help/authToken.md), [authorId](./help/authorId.md), [channelId](./help/channelId.md)
+- Belirli bir [dizi mesajı](./help/messageId.md)
+- Yalnızca [bağlantıları veya ekli dosyaları ](./help/filters.md)
+- Silinmiş kapsamlı mesaj günlüğü (içerikleriyle birlikte
+- Ekran görüntüsü almak için özel bilgileri gizleme
+- Sistem mesajlarını algılar ve "Sesli arama başlattınız" gibi atlar
+- Bilgisayarınızı kullanabilir ve discord'u çalışırken (makro tuşu komut dosyalarının aksine) kullanabilirsiniz
+- İstediğiniz zaman başlat / durdur
+- Binlerce mesajla bile çalışır
 
 ----
 
-#### About running code on your console
-
-I don't recommend running code from random places you get on the internet. For that same reason, I deliberately choose to make it readable (that's why it is a bit lenthy). That way people can analyze it and understand what does it does before running it, and be sure that nothing sketchy is happening under the hood.
+Aslen https://github.com/arvendf/DeleteDiscordMessages Adresinden
 
 ----
-# DO NOT SHARE YOUR `authToken`!
 
-Sharing your authToken on the internet will give full access to your account! [There are bots gathering credentials all over the internet](https://github.com/rndinfosecguy/Scavenger).
-If you post your token by accident, LOGOUT from discord on that **same browser** you got that token imediately.
-Changing your password will make sure that you get logged out of every device. I advice that you turn on [2FA](https://support.discordapp.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication) afterwards.
+#### Konsolunuzda kod çalıştırma hakkında
 
-If you are unsure do not share screenshots, or copy paste logs on the internet.
+İnternette aldığınız rastgele yerlerden kod çalıştırmanızı önermiyorum. Aynı nedenle, kasıtlı olarak okunabilir yapmayı seçiyorum (bu yüzden biraz lenthy). Bu şekilde insanlar onu analiz edebilir ve çalıştırmadan önce ne yaptığını anlayabilir ve kaputun altında kabataslak bir şey olmadığından emin olabilirsiniz.
 
 ----
-> **DISCLAIMER:**
-> THE SOFTWARE AND ALL INFORMATION HERE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+# TOKENİNİ PAYLAŞMA !
+
+İnternet üzerinden authToken paylaşmak hesabınıza tam erişim sağlayacaktır! [İnternetin her yerinde kimlik bilgileri toplayan botlar var](https://github.com/rndinfosecguy/Scavenger).
+Tokeninizi Yanlışlıkla gönderirseniz, Discord üzerinden **Şifremi Değiştir** özelliği ile Discord tokeniniz değişmiş olmakla beraber diğer tarayıcılardan (Uygulamalardan) çıkışınız yapılır. Daha sonra  [İki Aşamalı Doğrulama](https://support.discordapp.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication) açmanızı öneririm.
+
+Emin değilseniz ekran görüntülerini paylaşmayın veya internette consol ürünlerini kopyalamayın.
+
+----
+> **YASAL UYARI:**
+> YAZILIM VE BURADA TÜM BİLGİLER, TÜM BELİRLİ BİR AMACA UYGUNLUK, FONKSİYON İÇİN OLMAYAN HERHANGİ BİR TÜR, AÇIK VEYA ZIMNİ GARANTİ OLMAKSIZIN "OLDUĞU GİBİ" SAĞLANMAKTADIR. HİÇBİR DURUMDA YAZARLAR VEYA TELİF HAKKI TUTUCULARININ YAZILIM VEYA KULLANIM VEYA DİĞER BAĞLANTILARLA İLGİLİ, SÖZLEŞMEDE VEYA DİĞER BAĞLANTILARLA İLGİLİ, HERHANGİ BİR İDDİA, HASAR VEYA DİĞER SORUMLULUK İÇİN SORUMLU OLMAYACAKTIR..
 >
-> By using any code or information provided here you are agreeing to all parts of the above Disclaimer.
+> Burada sağlanan herhangi bir kodu veya bilgiyi kullanarak yukarıdaki Feragatnamenin tüm bölümlerini kabul etmiş olursunuz.
